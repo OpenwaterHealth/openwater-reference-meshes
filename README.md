@@ -18,8 +18,6 @@ This repository is part of the [OpenwaterHealth](https://github.com/OpenwaterHea
 | `examples/` | Loading and visualization scripts | Onboarding, sanity checks |
 | `metadata/` | Provenance, scan parameters, citation info | Reproducibility |
 
-> **Note for repo setup:** This table is a template. Update it to reflect what's actually in the folder Seemal uploads. Remove rows that don't apply and add any that are missing.
-
 ---
 
 ## File formats
@@ -96,7 +94,7 @@ The meshes in this repository are licensed under [**Creative Commons Attribution
 
 Any source code in this repository (loaders, examples, processing scripts) is licensed under **Apache 2.0** — see [`LICENSE-CODE`](LICENSE-CODE).
 
-> **Why two licenses?** Data and code have different conventions in open science. CC-BY-4.0 is the standard for openly-shared scientific data; Apache 2.0 matches the rest of the OpenwaterHealth ecosystem's direction for code. See the parent organization's [licensing overview](https://github.com/OpenwaterHealth) for context.
+> **Why two licenses?** Data and code have different conventions in open science. CC-BY-4.0 is the standard for openly shared scientific data; Apache 2.0 aligns with the rest of the OpenwaterHealth ecosystem's code direction. See the parent organization's [licensing overview](https://github.com/OpenwaterHealth) for context.
 
 ---
 
