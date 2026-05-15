@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: Openwater Reference Anatomical Meshes
+message: "If you use these meshes in research, please cite them as below."
+type: dataset
+authors:
+
+  - name: "Openwater and contributors"
+    website: "https://openwater.health"
+    repository-code: "https://github.com/OpenwaterHealth/openwater-reference-meshes"
+    url: "https://openwater.health"
+    license: CC-BY-4.0
+    date-released: "2026-05-15"
+    version: "0.1.0"
+    keywords:
+  - anatomical-meshes
+  - focused-ultrasound
+  - neuromodulation
+  - open-data
+  - medical-imaging
+  - openwater
