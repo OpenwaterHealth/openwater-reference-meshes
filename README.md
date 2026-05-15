@@ -1,4 +1,4 @@
-# reference-meshes
+# openwater-reference-meshes
 
 Open reference anatomical meshes for use with the Openwater platform — for treatment planning, beamforming simulation, transducer placement validation, and community experimentation.
 
