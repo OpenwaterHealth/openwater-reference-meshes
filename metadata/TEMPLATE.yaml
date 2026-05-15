@@ -1,0 +1,61 @@
+# Per-mesh provenance metadata. One file per mesh.
+
+# Copy this template, rename it to match the mesh filename (e.g., meshes/skull/example_skull.stl
+
+# → metadata/example_skull.yaml), and fill in every field. Leave a field as null only if it
+
+# genuinely does not apply; do not leave fields blank.
+
+mesh_file: meshes/skull/example_skull.stl
+display_name: "Example Skull Surface"
+description: "Skull surface mesh derived from CT, decimated to 50k faces."
+
+# --- Provenance (the most important section — required for legal clearance) ---
+
+source_type: "derived"          # derived | generated | manual | scanned | unknown
+source_dataset: "Example Open Dataset v1.2"
+source_url: "https://example.org/dataset"
+source_license: "CC-BY-4.0"     # license of the upstream data
+provenance_verified: true       # set false if not yet cleared for public release
+provenance_notes: ""            # any caveats, e.g. "verified by Dan 2026-05-15"
+
+# --- Acquisition (where applicable) ---
+
+modality: "CT"                  # CT | MRI | photogrammetry | synthetic | atlas | other
+voxel_size_mm: [0.5, 0.5, 0.5]
+subject_demographics:
+  age_range: null               # e.g. "adult 25-35" or null if not specified
+  sex: null                     # e.g. "F" or null
+  ethnicity: null
+  health_status: "healthy"      # healthy | patient | unknown
+
+# --- Processing pipeline ---
+
+segmentation_tool: "FreeSurfer v7.4"
+mesh_tool: "trimesh + decimation"
+target_faces: 50000
+smoothing: "Taubin (10 iterations, lambda=0.5)"
+units_conversion: "voxel-space → mm (affine applied)"
+
+# --- Geometry ---
+
+units: "mm"
+coordinate_system: "RAS+"       # RAS+ | LPS+ | LAS+ | other (document if other)
+origin: "anatomical (AC)"       # AC | scanner | bounding-box-center | other
+
+# --- Quality flags ---
+
+manifold: true
+watertight: true
+self_intersecting: false
+duplicate_vertices: false
+known_issues: ""
+
+# --- Attribution ---
+
+contributors:
+
+  - "Contributor Name (Institution)"
+    citation: "Smith et al., Frontiers in Neuroscience, 2024."
+    date_added: "2026-05-15"
+    added_by: "Dan Blizinski"
