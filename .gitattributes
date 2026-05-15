@@ -1,0 +1,37 @@
+# Git LFS rules for binary mesh files.
+
+# IMPORTANT: This file must be committed BEFORE any mesh files are added to the repo.
+
+# Adding LFS rules after large files are committed does not retroactively move them into LFS.
+
+# Mesh formats
+
+*.stl filter=lfs diff=lfs merge=lfs -text
+*.ply filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.off filter=lfs diff=lfs merge=lfs -text
+*.glb filter=lfs diff=lfs merge=lfs -text
+*.gltf filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.3mf filter=lfs diff=lfs merge=lfs -text
+
+# Volume / image formats that sometimes accompany meshes
+
+*.nii filter=lfs diff=lfs merge=lfs -text
+*.nii.gz filter=lfs diff=lfs merge=lfs -text
+*.mha filter=lfs diff=lfs merge=lfs -text
+*.mhd filter=lfs diff=lfs merge=lfs -text
+*.vtk filter=lfs diff=lfs merge=lfs -text
+*.vti filter=lfs diff=lfs merge=lfs -text
+
+# Treat text-based mesh metadata as normal text (NOT LFS)
+
+*.yaml -text=auto
+*.yml -text=auto
+*.json -text=auto
+*.md -text=auto
+*.cff -text=auto
+
+# Line endings
+
+* text=auto eol=lf
