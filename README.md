@@ -1,6 +1,6 @@
 # openwater-reference-meshes
 
-Open reference anatomical meshes for use with the Openwater platform — for treatment planning, beamforming simulation, transducer placement validation, and community experimentation.
+Open reference anatomical meshes for use with the Open-LIFU platform — for treatment planning, beamforming simulation, transducer placement validation, and community experimentation.
 
 This repository is part of the [OpenwaterHealth](https://github.com/OpenwaterHealth) open-source ecosystem. The meshes here are intended as a shared baseline so researchers, developers, and clinicians can prototype against the same anatomy without having to source or process their own.
 
